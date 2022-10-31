@@ -20,8 +20,7 @@ class smartphone {
     }
 }
 smartphone.callCounter = 0;
-let Galaxy = new smartphone('Samsung', 'Galaxy');
-// classe abastract User 
+// classe User 
 // un User astratto avrà tra i prorpi attributi anche uno smartphone (rapporto di "associazione/appartenenza")
 // => dallo user1 o 2 potrò accedere ai parametri (chiamate e credito ad esempio) dei rispettivi telefoni.
 // avranno un metodo per ricaricare il credito del proprio smartphone.
@@ -36,7 +35,7 @@ class User {
         this.smartphone.credit += cash;
         console.log(`Nuovo credito: ${this.smartphone.credit}€`);
     }
-    //tarffa = 0,20 cent/minuto
+    // tarffa = 0,20 cent/minuto
     call(duration) {
         if (this.smartphone.credit / 0.20 >= duration) {
             this.smartphone.calls += 1;

@@ -1,5 +1,80 @@
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background: rgb(255, 50, 50);
+  background: linear-gradient(180deg, rgba(255, 50, 50, 1) 0%, rgba(246, 29, 29, 1) 41%, rgba(245, 29, 29, 1) 50%, rgba(242, 29, 29, 1) 67%, rgba(164, 29, 29, 1) 89%, rgba(153, 0, 0, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1em;
+  height: 27vh;
+}
+
+.profile {
+  width: 30%;
+  text-align: center;
+}
+
+.profile p {
+  font-size: larger;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+#imgUser1 {
+  height: 100px;
+  width: 100px;
+  margin-inline: auto;
+  border: 0 solid;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  background-image: url("../assets/Mario.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imgUser2 {
+  height: 100px;
+  width: 100px;
+  margin-inline: auto;
+  border: 0 solid;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  background-image: url("../assets/Bobbie.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#imgUser3 {
+  height: 100px;
+  width: 100px;
+  margin-inline: auto;
+  border: 0 solid;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  background-image: url("../assets/Will.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  height: 73vh;
+  padding-left: 50px;
+}
+
+main div {
+  padding: 30px 110px 75px 40px;
+  margin-inline: auto;
+  margin-block: 1.5em;
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/phone.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
